@@ -1,0 +1,14 @@
+{
+  "name": "my-funky-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "reload"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "reload": "^3.0.3"
+  }
+}
