@@ -3,9 +3,11 @@
   "private": true,
   "scripts": {
     "lerna": "lerna",
-    "setup": "lerna bootstrap"
+    "setup": "lerna bootstrap",
+    "serve": "http-server ./packages/ -o"
   },
   "devDependencies": {
+    "http-server": "^0.11.1",
     "lerna": "^3.16.4"
   }
 }
