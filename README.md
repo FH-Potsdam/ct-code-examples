@@ -14,8 +14,11 @@ git clone git@github.com:FH-Potsdam/ct-code-examples.git
 cd ct-code-examples
 npm install
 npm run setup
+npm run serve
 ```
 
-Now all the subfolders should have their dependencies installed. You are good to go. Open one of the subfolders in your editor and hack away.
+## Develop  
 
+When all the subfolders should have their dependencies installed using 
+`npm run setup` you can cd into it and start the dev server using `npm start`.
 
