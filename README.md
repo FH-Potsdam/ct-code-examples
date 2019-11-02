@@ -1,20 +1,6 @@
 # CT Coding Sessions
 
-<div style="display:flex;flex-wrap: wrap; width:500px">
-<div style="width:125px; padding:5px">
-<img src="./images/colores.png" alt=""">
-</div>
-<div style="width:125px;padding:5px">
-<img src="./images/connected-dots.png" alt=""">
-</div>
-<div style="width:125px;padding:5px">
-<img src="./images/gridorious.png" alt=""">
-</div>
-<div style="width:125px;padding:5px">
-<img src="./images/swing.png" alt=""">
-</div>
-  </div>
-</div>
+[![](./thubms/colores.png)](./packages/colores) [![](./thubms/connected-dots.png)](./packages/grid) [![](./thubms/gridorious.png)](./packages/gridorious) [![](./thubms/swing.png)](./packages/swing)
 
 This is a collection repo with all the examples generated during coding sessions in the seminar [Creative Technologists - Tracing the City](https://fhp.incom.org/workspace/8527).
 

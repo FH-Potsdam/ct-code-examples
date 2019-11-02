@@ -4,7 +4,8 @@
   "scripts": {
     "lerna": "lerna",
     "setup": "lerna bootstrap",
-    "serve": "http-server ./packages/ -o"
+    "serve": "http-server ./packages/ -o",
+    "thumbs": "mogrify  -format png -path docs/thumbs -thumbnail 125x125 docs/images/*.png"
   },
   "devDependencies": {
     "http-server": "^0.11.1",
