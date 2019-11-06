@@ -5,7 +5,8 @@ const agents = [];
 function setup() {
   canvas = createCanvas(500, 500);
   canvas.parent("sketch");
-  jim = new agent(random(width), random(height));
+  jim = new Agent(random(width), random(height));
+  // Agent().display(); will throw an error
 }
 
 function draw() {
@@ -18,10 +19,10 @@ function draw() {
 }
 
 function mousePressed() {
-  agents.push(new agent(mouseX, mouseY));
+  agents.push(new Agent(mouseX, mouseY));
 }
 function mouseDragged() {
-  agents.push(new agent(mouseX, mouseY));
+  agents.push(new Agent(mouseX, mouseY));
 }
 function keyPressed() {
   if (key === "s" || key === "S") {
@@ -38,7 +39,12 @@ function keyPressed() {
  * @todo How to combine with package/motion-detection?
  *
  */
-function agent(x, y) {
+function Agent(x, y) {
+  if (!(this instanceof Agent)) {
+    throw new TypeError(
+      "Agent can not be called as a function. Create an instance by calling 'new Agent(x,y)'"
+    );
+  }
   // this.xoff = x;
   // this.yoff = y;
   // this.noiseRange = 2;

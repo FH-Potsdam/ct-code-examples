@@ -8,7 +8,7 @@ function setup() {
   canvas.parent("sketch");
   for (let x = 0; x < width; x += step) {
     for (let y = 0; y < height; y += step) {
-      areas.push(new area(x, y, step, step));
+      areas.push(new Area(x, y, step, step));
     }
   }
   noStroke();
@@ -21,7 +21,12 @@ function draw() {
   }
 }
 
-function area(x, y, w, h) {
+function Area(x, y, w, h) {
+  if (!(this instanceof Area)) {
+    throw new TypeError(
+      "Area can not be called as a function. Create an instance by calling new Area(x,y,w,h)"
+    );
+  }
   this.x = x;
   this.y = y;
   this.w = w;
