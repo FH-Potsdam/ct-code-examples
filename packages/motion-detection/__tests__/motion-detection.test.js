@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-const motionDetection = require('..');
+const motionDetection = require("..");
 
-describe('motion-detection', () => {
-    it('needs tests');
+describe("motion-detection", () => {
+  it("needs tests");
 });

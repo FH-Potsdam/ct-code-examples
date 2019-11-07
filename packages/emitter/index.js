@@ -1,7 +1,7 @@
 let x = 0;
 let canvas = undefined;
 const emitter = new Emitter();
-emitter.on("action", data => {
+emitter.on("action", (data) => {
   console.log(`hello action on ${JSON.stringify(data)}`);
   fill(data.fill);
   rect(random(width), random(height), 10, 10);
@@ -36,7 +36,7 @@ function keyPressed() {
 function Emitter() {
   if (!(this instanceof Emitter)) {
     throw new TypeError(
-      "Emitter can not be called as a function. Create an instance by calling new Emitter()"
+      "Emitter can not be called as a function. Create an instance by calling new Emitter()",
     );
   }
 
@@ -56,8 +56,8 @@ function Emitter() {
    */
   this.removeEventListener = (type, fn = true) => {
     eventHandlers = eventHandlers.filter(
-      handler =>
-        !(handler[0] === type && (fn === true ? true : handler[1] == fn))
+      (handler) =>
+        !(handler[0] === type && (fn === true ? true : handler[1] == fn)),
     );
   };
 
@@ -67,8 +67,8 @@ function Emitter() {
    * @param {any} event data
    */
   this.dispatchEvent = (type, data) => {
-    const handlers = eventHandlers.filter(handler => handler[0] === type);
-    handlers.forEach(handler => handler[1](data, type));
+    const handlers = eventHandlers.filter((handler) => handler[0] === type);
+    handlers.forEach((handler) => handler[1](data, type));
     // handlers.filter(handler => new RegExp("^" + handler[0].split("*").join(".*") + "$").test(type)).forEach(handler => handler[1](data, type))
   };
 
@@ -76,12 +76,12 @@ function Emitter() {
    * Get list of event handlers (of a type) or all if type is not specified
    * @param {string} [event type] (optional)
    */
-  this.getEventListeners = type => {
+  this.getEventListeners = (type) => {
     if (!type) return eventHandlers;
     let fns = [];
     eventHandlers
-      .filter(handler => handler[0] == type)
-      .forEach(handler => fns.push(handler[1]));
+      .filter((handler) => handler[0] == type)
+      .forEach((handler) => fns.push(handler[1]));
 
     return fns;
   };
@@ -126,7 +126,7 @@ function Emitter() {
    * Shortcut for clearEventListeners
    * @param {string} event type
    */
-  this.clear = type => {
+  this.clear = (type) => {
     this.clearEventListeners(type);
     return this;
   };
@@ -135,5 +135,5 @@ function Emitter() {
    *
    * @param {string} [type]
    */
-  this.list = type => this.getEventListeners(type);
+  this.list = (type) => this.getEventListeners(type);
 }

@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-const emitter = require('..');
+const emitter = require("..");
 
-describe('emitter', () => {
-    it('needs tests');
+describe("emitter", () => {
+  it("needs tests");
 });

@@ -42,7 +42,7 @@ function keyPressed() {
 function Agent(x, y) {
   if (!(this instanceof Agent)) {
     throw new TypeError(
-      "Agent can not be called as a function. Create an instance by calling 'new Agent(x,y)'"
+      "Agent can not be called as a function. Create an instance by calling 'new Agent(x,y)'",
     );
   }
   // this.xoff = x;

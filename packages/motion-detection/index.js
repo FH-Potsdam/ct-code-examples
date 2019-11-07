@@ -23,20 +23,20 @@ const constraints = {
   video: {
     mandatory: {
       maxWidth: 640,
-      maxHeight: 480
+      maxHeight: 480,
     },
-    optional: [{ maxFrameRate: 5 }]
+    optional: [{ maxFrameRate: 5 }],
   },
-  audio: false
+  audio: false,
 };
 
 function preload() {
   const pdevices = navigator.mediaDevices.enumerateDevices();
   pdevices
-    .then(devices => {
+    .then((devices) => {
       console.log("connected device", devices);
     })
-    .catch(err => {
+    .catch((err) => {
       console.error(err);
     });
   const supportedConstrains = navigator.mediaDevices.getSupportedConstraints();
@@ -45,12 +45,12 @@ function preload() {
 function setup() {
   createCanvas(640, 480);
   pixelDensity(1);
-  video = createCapture(constraints, stream => {
+  video = createCapture(constraints, (stream) => {
     // console.log(stream);
     console.log("device id", stream.getVideoTracks()[0].getSettings().deviceId);
     console.log(
       "framerate",
-      stream.getVideoTracks()[0].getSettings().frameRate
+      stream.getVideoTracks()[0].getSettings().frameRate,
     );
     console.log("height", stream.getVideoTracks()[0].getSettings().height);
     console.log("width", stream.getVideoTracks()[0].getSettings().width);
@@ -163,7 +163,7 @@ function draw() {
     0,
     0,
     video.width,
-    video.height
+    video.height,
   ); // Before we read the new frame, we always save the previous frame for comparison!
   //}
 }

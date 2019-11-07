@@ -5,10 +5,26 @@
     "lerna": "lerna",
     "setup": "lerna bootstrap",
     "serve": "http-server ./packages/ -o",
+    "prettier": "prettier \"**/*.+(js|json|yml|yaml|ts)\"",
+    "prettier:list": "npm run prettier -- --list-different",
+    "prettier:write": "npm run prettier -- --write",
+    "lint-staged": "lint-staged",
+    "lint": "eslint './packages/**/*.js'",
     "thumbs": "mogrify  -format png -path docs/thumbs -thumbnail 125x125 docs/images/*.png"
   },
   "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "http-server": "^0.11.1",
-    "lerna": "^3.16.4"
+    "husky": "^3.0.9",
+    "lerna": "^3.16.4",
+    "lint-staged": "^9.4.2",
+    "prettier": "^1.18.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged"
+    }
   }
 }

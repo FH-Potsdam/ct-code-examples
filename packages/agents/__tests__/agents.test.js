@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-const agents = require('..');
+const agents = require("..");
 
-describe('agents', () => {
-    it('needs tests');
+describe("agents", () => {
+  it("needs tests");
 });

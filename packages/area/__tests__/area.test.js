@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-const area = require('..');
+const area = require("..");
 
-describe('area', () => {
-    it('needs tests');
+describe("area", () => {
+  it("needs tests");
 });

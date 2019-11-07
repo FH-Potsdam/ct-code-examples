@@ -24,7 +24,7 @@ function draw() {
 function Area(x, y, w, h) {
   if (!(this instanceof Area)) {
     throw new TypeError(
-      "Area can not be called as a function. Create an instance by calling new Area(x,y,w,h)"
+      "Area can not be called as a function. Create an instance by calling new Area(x,y,w,h)",
     );
   }
   this.x = x;

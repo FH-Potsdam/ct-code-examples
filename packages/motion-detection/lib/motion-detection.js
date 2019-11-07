@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
 module.exports = motionDetection;
 
 function motionDetection() {
-    // TODO
+  // TODO
 }
