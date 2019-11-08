@@ -117,7 +117,7 @@ function draw() {
       }
     }
   }
-  // updatePixels(); // use this to update the pixels and show the diff
+  updatePixels(); // use this to update the pixels and show the diff
 
   if (count > 200) {
     motionX = avgX / count;

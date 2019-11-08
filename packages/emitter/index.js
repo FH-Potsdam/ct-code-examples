@@ -8,7 +8,7 @@ emitter.on("action", (data) => {
 });
 
 function setup() {
-  canvas = createCanvas(100, 100);
+  canvas = createCanvas(500, 500);
   canvas.parent("sketch");
 
   background(255);

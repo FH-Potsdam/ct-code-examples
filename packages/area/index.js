@@ -4,7 +4,7 @@ let canvas = undefined;
 const step = 25;
 const areas = [];
 function setup() {
-  canvas = createCanvas(100, 100);
+  canvas = createCanvas(500, 500);
   canvas.parent("sketch");
   for (let x = 0; x < width; x += step) {
     for (let y = 0; y < height; y += step) {

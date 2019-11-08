@@ -37,7 +37,6 @@ function keyPressed() {
  * @todo How to constrain the agent to the screen?
  * @todo How to give an agent a live time?
  * @todo How to combine with package/motion-detection?
- *
  */
 function Agent(x, y) {
   if (!(this instanceof Agent)) {
