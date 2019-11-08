@@ -13,7 +13,7 @@ function setup() {
         strokeWeight(random(2, 5));
         point(
           x + gridSize / 4 + random(gridSize / 4),
-          y + gridSize / 4 + random(gridSize / 4)
+          y + gridSize / 4 + random(gridSize / 4),
         );
       }
     }

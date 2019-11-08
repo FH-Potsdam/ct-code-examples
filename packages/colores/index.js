@@ -13,7 +13,7 @@ function setup() {
       h: (hue % 360) + random(-20, 20),
       s: random(40, 60),
       b: 40,
-      a: 100
+      a: 100,
     });
     hue += step;
   }

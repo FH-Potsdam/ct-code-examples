@@ -14,13 +14,6 @@
     "statusBar.foreground": "#15202b"
   },
   "peacock.color": "#6a9cfd",
-  "spellright.language": [
-    "en",
-    "de"
-  ],
-  "spellright.documentTypes": [
-    "markdown",
-    "latex",
-    "plaintext"
-  ]
+  "spellright.language": ["en", "de"],
+  "spellright.documentTypes": ["markdown", "latex", "plaintext"]
 }

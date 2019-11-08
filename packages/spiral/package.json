@@ -4,7 +4,8 @@
   "version": "0.1.0",
   "main": "index.html",
   "scripts": {
-    "start": "echo \"running on http://localhost:3000\" && reload --browser --port 3000"
+    "start": "echo \"running on http://localhost:3000\" && reload --browser --port 3000",
+    "http-server": "http-server"
   },
   "keywords": [
     "p5js, p5"
@@ -13,6 +14,7 @@
   "contributors": [],
   "license": "MIT",
   "devDependencies": {
+    "http-server": "^0.11.1",
     "reload": "^3.0.1"
   },
   "dependencies": {
